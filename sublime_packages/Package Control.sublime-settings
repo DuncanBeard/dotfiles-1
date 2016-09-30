@@ -1,0 +1,31 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"AdvancedNewFile",
+		"All Autocomplete",
+		"Clipboard Manager",
+		"CloseOtherWindows",
+		"ColorPicker",
+		"DashDoc",
+		"DiffView",
+		"DocBlockr",
+		"Emmet",
+		"Git",
+		"GitGutter",
+		"Package Control",
+		"PackageSync",
+		"Ruby Completions",
+		"Ruby on Rails snippets",
+		"SublimeLinter",
+		"SublimeLinter-jshint",
+		"SublimeLinter-ruby",
+		"SublimeREPL",
+		"Sync Settings",
+		"Terminal",
+		"Theme - Primer"
+	]
+}
