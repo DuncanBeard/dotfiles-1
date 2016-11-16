@@ -1,11 +1,11 @@
-
 [[ -s "$HOME/.profile" ]] && source "$HOME/.profile" # Load the default .profile
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 
+# Enable Bash completion
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
-    . $(brew --prefix)/etc/bash_completion
+	. $(brew --prefix)/etc/bash_completion
 fi
 
 # Easier navigation: .., ..., ...., ....., ~ and -
@@ -22,6 +22,7 @@ alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias p="cd ~/projects"
 alias g="git"
+alias ga="git add"
 alias h="history"
 alias j="jobs"
 alias gs="git status"
@@ -29,6 +30,9 @@ alias gb="git checkout -b"
 alias be="bundle exec"
 alias bi="bundle install"
 alias bu="bundle update"
+
+# Open file with TextWrangler
+alias tw='open -a /Applications/TextWrangler.app'
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
@@ -222,5 +226,8 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 
 # Reload the shell (i.e. invoke as a login shell)
 alias reload="exec $SHELL -l"
+
+# Don't open multiple Sublime sessions
+alias sublime="sublime --add"
 
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
